@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiorentino-TP</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <header>
         <nav class="w3-top w3-bar w3-black">
             <a href="#home" class="w3-bar-item w3-button">37845 - Christian Fiorentino</a>
-            <!-- <a href="#about" class="w3-bar-item w3-button">About</a>
-            <a href="#members" class="w3-bar-item w3-button">Members</a>
+            <a href="index.html" class="w3-bar-item w3-button">Volver al FRONTEND</a>
+            <!--<a href="#members" class="w3-bar-item w3-button">Members</a>
             <a href="#contact" class="w3-bar-item w3-button">Contact</a> -->
         </nav>
     </header>
@@ -140,11 +141,19 @@
 
     </main>
     <div class="w3-panel w3-pale-green w3-bottombar w3-topbar w3-border-green w3-border">
-        <p>En esta entrega se habilitaron los botones Leer Todo y Filtrar.</p>
+        
         <p>Los datos son leidos desde el Localstorage y si no hay datos, se crea un array por primera vez.</p>
-        <p>Luego se puede: agregar artículos desde el boton "Crear Item", "Leer Todo" la Base de datos y "Filtrar" por categoría. También se puede "Borrar" un Artículo. Los cambios serán guardados en el LocalStorage. La Modificación está en construcción.</p>
+        <p>Podemos:</p>
+            <ul>
+                <li>Agregar artículos desde el boton "Crear Item"</li>
+                <li>"Leer Todo" traerá todos los datos la Base</li>
+                <li>"Filtrar": Se puede filtrar por categoría</li>
+                <li>Desde acciones se puede "Editar" y "Borrar" los artículos indicados.</li>
+                <li>Los cambios serán guardados en el LocalStorage.</li>
+            </ul>
     </div>
 
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

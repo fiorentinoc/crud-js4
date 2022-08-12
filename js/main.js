@@ -181,6 +181,7 @@ function app() {
             sistema.alta({id: sistema.asignarId(), cat: cat.value, mod: mod.value, precio: precio.value, stk: stk.value, title: title.value, desc: desc.value, img: img.value})
             sistema.ordenar()
             mostrar(sistema.leerTodo())
+            mostrarTostada("add")
         }
         if (opcion == 'editar'){
             console.log('editar')
@@ -242,6 +243,7 @@ function app() {
         sistema.borrar(idx)
         mostrar(sistema.leerTodo())
         document.getElementById('id03').style.display='none'
+        mostrarTostada()
     })
 
     //Procedimiento para EDITAR
@@ -290,6 +292,28 @@ function app() {
     console.log(sistema.filtrar(fil))
     alert(JSON.stringify(sistema.filtrar(fil)))
  */
+
+    function mostrarTostada(a){
+        if (a == "add") {
+
+            Toastify({
+                text: "Articulo AGREGADO!!!",
+                duration: 4000,
+                style: {
+                    background: "rgb(50,200,55)",
+                  },
+
+                }).showToast();
+        } else {
+            Toastify({
+                text: "Articulo BORRADO!!!!!",
+                duration: 4000,
+                style: {
+                    background: "rgb(255,0,0)",
+                  },
+                }).showToast();
+        }
+    }
 }
 app();
 
